@@ -1,0 +1,13 @@
+[Unit]
+Description=PlexPy2InfluxDB Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/plexpy_influxdb_export/plexpy_influxdb_export.py
+Restart=on-failure
+RestartSec=15s
+TimeoutSec=15s
+
+[Install]
+WantedBy=multi-user.target
