@@ -24,6 +24,8 @@
 	* [https://hub.docker.com/r/grafana/grafana/](https://hub.docker.com/r/grafana/grafana/)
 		* `docker run -d -e "GF_SECURITY_ADMIN_PASSWORD=secret" -p 3000:3000 --name=grafana -v grafana-storage:/var/lib/grafana --restart=always grafana/grafana`
 		* Other docker configurations covered here - [http://docs.grafana.org/installation/docker/](http://docs.grafana.org/installation/docker/)
+	* Create two datasources
+		* plexpy & telegraf are the influxdb database names
 	* Import dashboard json
 * **InfluxDB Plexpy export**
 	* Use plexpy_influxdb_export.py
